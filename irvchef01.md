@@ -4,6 +4,7 @@ This document describes how to build a VMWare box configured with a minimal Cent
 
 ## Requirements
 - [CentOS 6.x](http://isoredirect.centos.org/centos/6/isos/x86_64/) download the `CentOS-6.x-x86_64-minimal.iso` file (~400 MB)
+- [Chef Server](https://web-dl.packagecloud.io/chef/stable/packages/el/6/chef-server-core-12.0.0-1.el6.x86_64.rpm)
 
 
 ## Configure VMWare
