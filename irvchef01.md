@@ -142,3 +142,9 @@ Refer to [Chef Server Installation](http://docs.chef.io/install_server.html)
     $ sudo yum install chef-server-core-12.0.0-1.el6.x86_64.rpm
     $ sudo chef-server-ctl reconfigure
     $ sudo chef-server-ctl user-create user_name first_name last_name email password --filename FILE_NAME
+
+Install Chef Manage package:
+
+    $ sudo chef-server-ctl install opscode-manage
+    $ sudo opscode-manage-ctl reconfigure
+    $ sudo chef-server-ctl reconfigure
