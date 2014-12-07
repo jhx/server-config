@@ -141,7 +141,7 @@ Install useful packages:
 
 ## Install Chef server
 
-Refer to [Chef Server Installation](http://docs.chef.io/install_server.html)
+Refer to [Chef Server Installation](http://docs.chef.io/install_server.html) instructions.
 
     $ cd /tmp
     $ wget https://web-dl.packagecloud.io/chef/stable/packages/el/6/chef-server-core-12.0.0-1.el6.x86_64.rpm
