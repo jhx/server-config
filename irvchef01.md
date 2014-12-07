@@ -159,3 +159,9 @@ Install Chef Push Jobs package:
     $ sudo chef-server-ctl install opscode-push-jobs-server
     $ sudo opscode-push-jobs-server-ctl reconfigure
     $ sudo chef-server-ctl reconfigure
+
+Install Chef Reporting package:
+
+    $ sudo chef-server-ctl install opscode-reporting
+    $ sudo opscode-reporting-ctl reconfigure
+    $ sudo chef-server-ctl reconfigure
