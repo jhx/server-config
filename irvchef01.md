@@ -120,15 +120,6 @@ Test login via ssh from separate terminal.
 
     $ ssh vagrant@<ip.ad.dr.es>
 
-Update BlueCoat configuration:
-
-- Enable outbound http(s) traffic
-    BlueCoat > Policy > Visual Policy Manager > Web Authentication Layer
-    Update the `ManufacturingDataCollection` object
-- Enable direct access to `packagecloud.io`:
-    BlueCoat > Policy > Visual Policy Manager > ssl_intercept_layer
-    Add `packagecloud.io`
-    
 Disable SELinux:
 
     $ sudo setenforce permissive
@@ -137,7 +128,18 @@ Install useful packages:
 
     $ sudo yum -y install nano wget
 
-Install Chef server:
+
+## Update BlueCoat configuration
+
+- Enable outbound http(s) traffic
+    BlueCoat > Policy > Visual Policy Manager > Web Authentication Layer
+    Update the `ManufacturingDataCollection` object
+- Enable direct access to `packagecloud.io`:
+    BlueCoat > Policy > Visual Policy Manager > ssl_intercept_layer
+    Add `packagecloud.io`
+    
+
+## Install Chef server
 
 Refer to [Chef Server Installation](http://docs.chef.io/install_server.html)
 
