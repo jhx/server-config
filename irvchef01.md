@@ -165,3 +165,14 @@ Install Chef Reporting package:
     $ sudo chef-server-ctl install opscode-reporting
     $ sudo opscode-reporting-ctl reconfigure
     $ sudo chef-server-ctl reconfigure
+
+Update firewall:
+
+Add the following lines to `/etc/sysconfig/iptables` below line containing `--dport 22`:
+
+    -A INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
+    -A INPUT -m state --state NEW -m tcp -p tcp --dport 443 -j ACCEPT
+
+Reload firewall:
+
+    $ sudo service iptables reload
