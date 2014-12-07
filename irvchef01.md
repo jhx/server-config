@@ -129,9 +129,9 @@ Update BlueCoat configuration:
     BlueCoat > Policy > Visual Policy Manager > ssl_intercept_layer
     Add `packagecloud.io`
     
-Install `wget`:
+Install useful packages:
 
-    $ sudo yum -y install wget
+    $ sudo yum -y install nano wget
 
 Install Chef server:
 
