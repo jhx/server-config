@@ -129,6 +129,10 @@ Update BlueCoat configuration:
     BlueCoat > Policy > Visual Policy Manager > ssl_intercept_layer
     Add `packagecloud.io`
     
+Disable SELinux:
+
+    $ sudo setenforce permissive
+
 Install useful packages:
 
     $ sudo yum -y install nano wget
