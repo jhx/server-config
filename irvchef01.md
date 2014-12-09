@@ -131,12 +131,15 @@ Install useful packages:
 
 ## Update BlueCoat configuration
 
-- Enable outbound http(s) traffic
-    BlueCoat > Policy > Visual Policy Manager > Web Authentication Layer
-    Update the `ManufacturingDataCollection` object
-- Enable direct access to `packagecloud.io`:
-    BlueCoat > Policy > Visual Policy Manager > ssl_intercept_layer
-    Add `packagecloud.io`
+Enable outbound http(s) traffic:
+
+- BlueCoat > Policy > Visual Policy Manager > Web Authentication Layer
+- Update the `ManufacturingDataCollection` object
+
+Enable direct access to `packagecloud.io`:
+
+- BlueCoat > Policy > Visual Policy Manager > ssl_intercept_layer
+- Add `packagecloud.io`
     
 
 ## Install Chef server
