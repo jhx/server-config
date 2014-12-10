@@ -181,3 +181,12 @@ Add the following lines to `/etc/sysconfig/iptables` below line containing `--dp
 Reload firewall:
 
     $ sudo service iptables reload
+
+
+## Configure Chef Server
+
+Login to [irvchef01](https://irvchef01.usa.hardie.win).
+
+- Create admin user
+- Create organization
+- Create additional user(s)
