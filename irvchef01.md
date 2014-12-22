@@ -153,6 +153,11 @@ Install useful packages:
 
     $ sudo yum -y install nano wget
 
+Enable networking on boot:
+
+    $ sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0
+    ONBOOT=yes
+
 
 ## Update BlueCoat configuration
 
