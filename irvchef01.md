@@ -145,6 +145,10 @@ Disable SELinux:
 
     $ sudo setenforce permissive
 
+Update packages:
+
+    $ sudo yum -y update
+
 Install useful packages:
 
     $ sudo yum -y install nano wget
