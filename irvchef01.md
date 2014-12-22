@@ -8,32 +8,61 @@ This document describes how to build a VMWare box configured with a minimal Cent
 
 
 ## Configure VMWare
-General:
+Configuration:
 
-- Name: *(varies)*
-- Type: **Linux**
-- Version: **Red Hat (64 bit)**
+- [x] Custom
 
-System:
+Name and Location:
 
-- Motherboard
-	- Base Memory: **1024 MB**
-	- Boot Order: **CD/DVD-ROM, Hard Disk**
-	- Extended Features: **Enable IO APIC, Hardware clock in UTC time**
-
-Display:
-
-- *(use default settings)*
+- `irvchef01.usa.hardie.win`
 
 Storage:
 
-- Controller: SATA **`centos-6.4-minimal.vdi`**
-- Virtual Size: **100.00 GB**
-- Details: **Dynamically allocated**
+- datastore1
 
-Audio:
+Virtual Machine Version:
 
-- **Disable audio**
+- Virtual Machine Version: **8**
+
+Guest Operating System:
+
+- Linux
+- Red Hat Enterprise Linux 6 (64-bit)
+
+CPUs:
+
+- Number of virtual sockets: **1**
+- Number of cores per virtual socket: **1**
+
+Memory:
+
+- Memory Size: **1 GB**
+
+Network:
+
+- How many NICs: **1**
+- NIC 1: **VM Network**
+- Adapeter: **E1000**
+- Connect at Power On: **[x]**
+
+SCSI Controller:
+
+- [x] VMWare Paravirtual
+
+Select a Disk:
+
+- [x] Create a new virtual disk
+
+Create a Disk:
+
+- Virtual disk size: **100.00 GB**
+- Thick Provision Lazy Zeroed
+- Store with the virtual machine
+
+Advanced Options:
+
+- Virtual Device Node: SCSI (0:0)
+
 
 Network:
 
@@ -41,14 +70,6 @@ Network:
 - Manual IP assignment: **`172.16.0.90`**
 - DNS: **`172.16.0.10`**
 - Gateway: **`172.16.0.1`**
-
-Ports:
-
-- *(use default settings)*
-
-Shared Folders:
-
-- *(use default settings)*
 
 
 ## Install CentOS 6.x
