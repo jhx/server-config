@@ -176,6 +176,13 @@ Enable direct access to `packagecloud.io`:
 
 Refer to [Chef Server Installation](http://docs.chef.io/install_server.html) instructions.
 
+Note:
+
+- The test step must succeed before proceeding.
+- `Errno::ECONNREFUSED`: verify the DNS entry (or `/etc/hosts`).
+
+Install Chef Server:
+
     $ cd /tmp
     $ wget https://web-dl.packagecloud.io/chef/stable/packages/el/6/chef-server-core-12.0.0-1.el6.x86_64.rpm
     $ sudo yum install chef-server-core-12.0.0-1.el6.x86_64.rpm
